@@ -1,0 +1,61 @@
+// General container for the header
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #2d3b4d;
+    color: white;
+   
+  }
+  
+  // Styling for the logo container
+  .logo-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;  // Space between the logo and the name
+  }
+  
+  .logo-img {
+    width: 50px; // Adjust the size of the circular logo
+    height: 50px;
+    border-radius: 50%;  // Makes the logo circular
+    object-fit: cover;
+  }
+  
+  .university-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  // Styling for buttons container
+  .btns-div {
+    display: flex;
+    gap: 20px;
+  }
+  
+  // Styling for individual buttons (text-style, no borders)
+  .header-btn {
+    background: none; /* No background color */
+    color: #f1f1f1; /* Default text color (adjust as needed) */
+    font-weight: bold; /* Bold text */
+    font-size: 20px; /* Font size */
+    padding: 10px 15px; /* Add some spacing for clickability */
+    border: none; /* Remove all borders */
+    cursor: pointer; /* Pointer cursor for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition for hover */
+    margin: 0 0px; /* Space between buttons */
+  }
+  
+  .header-btn a {
+    color: inherit; /* Inherit the color from the button */
+    text-decoration: none; /* No underline for links */
+  }
+  
+  .header-btn:hover {
+    color: #007bff; /* Change text color on hover (use your theme color) */
+  }
+  

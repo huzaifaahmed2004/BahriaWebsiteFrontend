@@ -1,0 +1,62 @@
+.info {
+    display: flex;
+  }
+  
+  .info-container {
+    margin-left: 300px; // Sidebar width adjustment
+    padding: 30px;
+    width: 100%;
+    background-color: #f9f9f9;
+    height: 100vh;
+  
+    h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  
+    .info-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+  
+      .form-group {
+        margin-bottom: 20px;
+        
+        label {
+          font-size: 1.1rem;
+          color: #333;
+        }
+  
+        input {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+          background-color: #f7f7f7;
+        }
+      }
+  
+      .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+    }
+  }
+  

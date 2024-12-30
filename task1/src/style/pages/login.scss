@@ -1,0 +1,99 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  position: relative; // To position the pseudo-element correctly
+  background: url('../../component/Images/BahriaBanner.jpeg') no-repeat center center; // Background image
+  background-size: cover;
+
+  // Add shade overlay using ::before
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); // Black shade with 50% transparency
+    z-index: 1; // Ensure it sits below the form
+  }
+
+  .login-content {
+    position: relative; // Ensure form is above the shade
+    z-index: 2; // Place form above the overlay
+    // background-color: rgba(255, 255, 255, 0.8); // Adjust 0.8 for the desired transparency
+    background-color: transparent;
+    padding: 30px;
+    // fill-opacity: .1;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 20px;
+      color: #f1f1f1;
+      font-size: 2rem;
+      
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+
+      label {
+        font-size: 1.3rem;
+        color: #fcf7f7;
+       
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1.3rem;
+      }
+    }
+
+    .login-btn {
+      width: 105%;
+      padding: 12px ;
+      background-color: #f4a261;
+      border: none;
+      color: white;
+      font-size: 1.4rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 15px;
+
+      &:hover {
+        background-color: #e07b4e;
+      }
+    }
+
+    .other-options {
+      margin-top: 20px;
+
+      .register-btn {
+        width: 105%;
+        padding: 12px;
+        background-color: #2d7a44;
+        color: white;
+        font-size: 1.4rem;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #246c38;
+        }
+      }
+    }
+  }
+}

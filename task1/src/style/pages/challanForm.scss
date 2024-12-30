@@ -1,0 +1,55 @@
+.challan-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #e9e3e3;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  
+    .challan-info {
+      width: 100%;
+      margin-bottom: 20px;
+  
+      .challan-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+  
+        .label {
+          font-weight: bold;
+          color: #333;
+        }
+  
+        .value {
+          color: #555;
+        }
+      }
+    }
+  
+    .generate-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+  

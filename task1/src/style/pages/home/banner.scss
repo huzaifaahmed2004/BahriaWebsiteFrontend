@@ -1,0 +1,73 @@
+// Banner Styling
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;  // Full viewport height
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  // Ensure the text is readable over the image
+  .banner-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);  // Dark transparent overlay for better readability of text
+    z-index: 0;
+  }
+  
+  .banner-content {
+    position: relative;  // Ensures the content stays on top of the overlay
+    z-index: 2;
+  
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+  
+    .banner-btn {
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      background-color: #f4a261;  // Button color
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #e07b4e;  // Darken button on hover
+      }
+    }
+  }
+  
+  // Responsive Design for Smaller Screens
+  @media (max-width: 768px) {
+    .banner-container {
+      height: 50vh;  // Reduce height on smaller screens
+    }
+  
+    .banner-content h1 {
+      font-size: 2.5rem;  // Adjust the heading size for mobile
+    }
+  
+    .banner-content p {
+      font-size: 1.2rem;  // Adjust paragraph size for mobile
+    }
+  }
+  

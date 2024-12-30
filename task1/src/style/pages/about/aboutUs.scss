@@ -1,0 +1,66 @@
+// About Us Page Styling
+.aboutus-container {
+    padding: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .aboutus-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aboutus-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .aboutus-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .mission, .vision, .core-values {
+    margin-top: 40px;
+  }
+  
+  .mission h2, .vision h2, .core-values h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f4a261;
+  }
+  
+  .core-values ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .core-values li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .aboutus-container {
+      padding: 20px;
+    }
+  
+    .aboutus-content {
+      padding: 20px;
+    }
+  
+    .aboutus-content h1 {
+      font-size: 2rem;
+    }
+  
+    .aboutus-content p {
+      font-size: 1rem;
+    }
+  }
+  
